@@ -10,22 +10,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* outline: 1px solid red; */
-    /* font-family: system-ui, -apple-system, sans-serif; */
-    /* font-family: Macondo, sans-serif;  */
-     /* font-family: EB Garamond; */
-     font-family: Special Elite;
+     font-family: 'Special Elite', 'Eb garamond', Macondo, serif;
+     color: rgb(243, 219, 177);
+}
+
+
+h1, h2{
+    color: white;
 }
 
 
 a{
     text-decoration: none;
-    color: white;
 }
+
 
 .banner{
     background-image: url(img/banner.png);
+    background-position: center;
+    background-size: 100% 100%;
     height: 20px;
+    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -34,7 +39,6 @@ a{
 body{
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     width: 100%;   
 }
 
@@ -71,7 +75,7 @@ body{
     flex-direction: row;
     background: transparent;
     position: relative;   /* to center logo*/
-    font-size: 20px;
+    font-size: 1.3rem;
     flex-shrink: 0;
 }
 
@@ -85,6 +89,8 @@ body{
     position: absolute;
     left: 50%;
     transform: translateX(-50%); 
+    height: 100%;
+    /* width: 8%; */
 }
 
 .right-links{
@@ -106,43 +112,52 @@ body{
 .header.section{
     background: transparent;
     height: 90%;
-    /* border: 2px solid white; */
     display: flex;
-    color: white;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
 }
 
 .intro{
-    /* border: 2px solid grey; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center ;
     align-items: center;
     width: 40%;
     height: 100%;
-    align-items: center;
     text-align: center;
     margin-top: 8%;
 }
 
 .intro h1{
-    font-size: 50px;
+    font-size: 3em;
 }
 
 .intro p{
     font-size: 19px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     margin: 8% 0;
 }
 
-.intro button{
+.intro button, .outro button{
     width: 160px;
     height: 55px;
     font-size: 22px;
+    font-weight: 900;
+    color: black;
+    background-image: linear-gradient(to bottom, #ea9f15, #e0ba72);
+    border-radius: 2px;
+    border: 2px solid rgb(227, 191, 13);
+    box-shadow: 0px 0px 10px 1px rgb(0, 0, 0);
+}
+
+
+.intro button:hover, .outro button:hover{
+    
+    filter: brightness(1.1);
+    box-shadow: 0px 0px 10px 1px rgb(188, 165, 47);
+    transition: box-shadow 0.3s ease;
 }
 
 
@@ -165,7 +180,6 @@ body{
     display: flex;
     flex-shrink: 0;
     flex-direction: column;
-    color: white;
     justify-content: center;
     align-items: center;
 }
@@ -196,12 +210,10 @@ body{
 .section2-article1{
     display: flex;
     flex-direction: column;
-    /* background-color: red; */
     width: 30%;
     height: 88%;
     margin-left: 4%;
     align-items: center;
-    color: white;
 }
 
 
@@ -211,7 +223,6 @@ body{
     width: 30%;
     height: 88%;
     align-items: center;
-    color: white;
 }
 
 .section2-article3{
@@ -220,7 +231,6 @@ body{
     width: 30%;
     height: 88%;
     align-items: center;
-    color: white;
 }
  
 .section2-article4{
@@ -230,8 +240,6 @@ body{
     height: 88%;
     margin-right: 4%;
     align-items: center;
-    color: white;
-
 }
 
 .section2-articles-info img{
@@ -241,11 +249,6 @@ body{
      
 }
 
-/* .section2-articles-info:hover img{
-    transition: transform 0.3s ease;
-    transform: scale(1.1); 
-     opacity: 0.8;  
-} */
 
 .section2-articles-info h2{
     width: 100%;
@@ -262,7 +265,6 @@ body{
 
 
 
-
                                                     /* BODY-2 */
 
 
@@ -272,7 +274,6 @@ body{
     display: flex;
     flex-direction: column;
     gap: 8px;
-    /* background-color: #2f3188; */
 }
 
 
@@ -324,7 +325,6 @@ body{
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: top;
-    /* background-color: #473775;  */
     box-shadow: 5px 2px 6px 7px #473775;
 }
 
@@ -345,7 +345,6 @@ body{
 .race-logo{
     height: 24%;
     width: 15%;
-    /* border: 1px solid white; */
     display: flex;
     margin: 2%;
     
@@ -361,28 +360,24 @@ body{
     display: flex;
     flex-direction: column;
     width: 45%;
-    height: 50%;
-    /* border: 1px solid rgb(218, 208, 208); */
+    height: 76%;
+    justify-content: flex-start;
     padding: 1em;
+    padding-top: 0.7em;
+    flex-wrap: wrap;
 }
 
 .race-info h1{
-    color: white;
     font-family: Special Elite;
-    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-    /* margin-left: 8%; */
     line-height: 1.5em;
-    font-size: 40px;
+    font-size: 2.5em;
 }
 
 .race-info p{
-    color: white;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /* margin-left: 8%; */
     line-height: 1.3em;
-    font-size: 22px;
+    font-size: 1.3em;
 }
-
 
 
 
@@ -400,14 +395,11 @@ body{
 
 .gallery{
     height: 20%;
-    /* border: 1px solid white; */
     flex-shrink: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2.2em;
-    color: white;
-    /* flex-shrink: 0; */
 }
 
 .gallery h2{
@@ -418,13 +410,11 @@ body{
 
 .gallery-pics{
     height: 80%;
-    /* border: 1px solid yellow; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 2%;
-    /* flex-shrink: 0; */
 }
 
 .gallery-pics img{
@@ -435,7 +425,7 @@ body{
 }
 
 .gallery-pics img:hover{
-    transition: transform 0.3s ease;
+    transition: transform 0.2s ease;
     transform: scale(1.1); 
     filter: brightness(1.5);
     box-shadow: 0 0 10px 0.1px rgb(170, 208, 221);
@@ -454,9 +444,86 @@ body{
 .gallery-button button{
     width: 9%;
     height: 45%;
-    font-size: 1.4em;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 5px;
+    font-size: 1.4em;
+    font-weight: 900;
+    background-color: #354c9a;
+    color: #fdc435;
+    border-radius: 3px;
+    border: 2px solid rgb(87, 128, 210);
+    box-shadow: 0 0 10px 1px black;
+}
+
+.gallery-button button:hover{
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 0 10px 1px rgb(132, 132, 11);
+    filter: brightness(1.2);
+}
+
+
+
+
+                                                /*  body-4 */
+
+.body-4{
+    height: 95vh;
+    position: relative;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.8)), url(img/orcs_vs_humans_keyart.avif);
+    background-size: 100% 115%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.outro{
+    position: absolute;
+    bottom: 9%;
+    left: 50%;
+    transform: translateX(-50%); 
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+.outro h2{
+    font-size: 3.1em;
+    text-align: center;
+}
+
+.outro p{
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 2% 0;
+}
+
+.outro button{
+    width: 160px;
+    height: 55px;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+
+                                            /* Footer */
+.footer{
+    height: 17vh;
+    background-image: url(img/footer.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p{
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    text-align: center;
+    line-height: 1.4em;
 }
