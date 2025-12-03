@@ -13,3 +13,7 @@ This project is for educational purposes only and is **not affiliated with or en
 All images, branding, and design rights belong to Blizzard Entertainment.
 
 For more information about Warcraft 3, visit [Blizzard Entertainment Warcraft 3 website] (https://warcraft3.blizzard.com/en-us#races)
+
+---
+
+[👉 View Demo 👈](https://anvar-khikmatov.github.io/WC3-landing-page/)
